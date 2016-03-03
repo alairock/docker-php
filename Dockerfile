@@ -6,6 +6,8 @@ RUN apk --update add wget curl git php php-curl php-openssl php-pdo php-json php
 
 RUN mkdir -p /var/www
 
+RUN echo 'hello' > /var/www/index.html
+
 WORKDIR /var/www
 
 COPY . /var/www
